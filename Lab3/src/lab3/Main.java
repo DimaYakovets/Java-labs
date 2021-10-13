@@ -33,8 +33,30 @@ public class Main {
                         .CreateInstance()
         };
         var store = new Store(phones);
-        for (var d : store.sortByCost()){
-            System.out.println(d);
-        }
+        System.out.println("----- Get Vendors -----");
+        for (String vendor : store.getVendors()) {
+            System.out.println(vendor);
+        };
+
+        System.out.println("----- Get Vendors Stream -----");
+        for (String vendor : store.getVendors()) {
+            System.out.println(vendor);
+        };
+
+        System.out.println("----- Sort By Cost -----");
+        for (Smartphone vendor : store.sortByCostStream()) {
+            System.out.println(vendor);
+        };
+
+        System.out.println("----- Sort By Cost Stream -----");
+        for (Smartphone vendor : store.sortByCostStream()) {
+            System.out.println(vendor);
+        };
+
+        System.out.println("----- Get Price With Discount -----");
+        System.out.println(store.getPriceWithDiscount(phones, 0.15f));
+
+        System.out.println("----- Get Price With Discount Stream-----");
+        System.out.println(store.getPriceWithDiscountStream(phones, 0.15f));
     }
 }
