@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5323b58-aa76-42e5-a598-5ea875399bee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/hibernate_validator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_validation_api.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Device.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Laptop$LaptopBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Laptop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Smartphone$SmartphoneBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Smartphone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Store.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab4/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab4/Laptop.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab4/Smartphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab4/Store.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1zUOu7Ov4F5fA7HFqQVlVwmieQt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.13157892" />
+    <property name="project.structure.side.proportion" value="0.15174508" />
+  </component>
+  <component name="RunManager" selected="TestNG.StoreTest.DeviceNameTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Lab4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreTest.DeviceNameTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lab4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StoreTest" />
+      <option name="METHOD_NAME" value="DeviceNameTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreTest.DeviceNameTestFailure" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lab4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StoreTest" />
+      <option name="METHOD_NAME" value="DeviceNameTestFailure" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreTest.DeviceRamTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lab4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StoreTest" />
+      <option name="METHOD_NAME" value="DeviceRamTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreTest.DeviceRamTestFailure" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Lab4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="StoreTest" />
+      <option name="METHOD_NAME" value="DeviceRamTestFailure" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.StoreTest.DeviceNameTest" />
+        <item itemvalue="TestNG.StoreTest.DeviceNameTestFailure" />
+        <item itemvalue="TestNG.StoreTest.DeviceRamTest" />
+        <item itemvalue="TestNG.StoreTest.DeviceRamTestFailure" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5323b58-aa76-42e5-a598-5ea875399bee" name="Changes" comment="" />
+      <created>1634199419861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634199419861</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

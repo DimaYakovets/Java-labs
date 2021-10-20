@@ -1,4 +1,3 @@
-package lab4;
 
 public abstract class Device {
     protected String _name;
