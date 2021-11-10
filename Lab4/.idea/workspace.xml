@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5323b58-aa76-42e5-a598-5ea875399bee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/hibernate_validator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_validation_api.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Device.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Laptop$LaptopBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Laptop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Smartphone$SmartphoneBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Smartphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Lab4/lab4/Store.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab4/Device.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab4/Laptop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab4/Smartphone.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab4/Store.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
