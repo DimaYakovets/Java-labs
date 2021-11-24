@@ -1,14 +1,20 @@
 
 public abstract class Device {
+    public int _id;
     protected String _name;
     protected String _manufacturer;
     protected int _ram;
 
-    protected Device(String name, String manufacturer, int ram)
+    protected Device(int id, String name, String manufacturer, int ram)
     {
+        _id = id;
         _name = name;
         _manufacturer = manufacturer;
         _ram = ram;
+    }
+
+    public int getId() {
+        return _id;
     }
 
     public String getName() {

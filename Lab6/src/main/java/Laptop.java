@@ -4,7 +4,7 @@ public class Laptop extends Device{
 
     private Laptop(LaptopBuilder b)
     {
-        super(b._name, b._manufacturer, b._ram);
+        super(0, b._name, b._manufacturer, b._ram);
         _hddSize = b._hdd;
         _usbVersion = b._usb;
     }

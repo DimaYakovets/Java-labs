@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5323b58-aa76-42e5-a598-5ea875399bee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab6/src/main/java/SmartphoneRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/DataBaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/DataBaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab6/src/main/java/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab6/src/main/java/Smartphone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -27,12 +27,22 @@ public class Main {
                         .setRam(8)
                         .CreateInstance()
         };
+
+        Smartphone googlePixel6 =
+                new Smartphone.SmartphoneBuilder()
+                .setManufacturer("Google")
+                .setName("Pixel 6")
+                .setStorage(512)
+                .setRam(12)
+                .CreateInstance();
+
         Laptop[] laptops = new Laptop[] {
                 new Laptop.LaptopBuilder()
                         .setManufacturer("Asus")
                         .setName("ROG Strix")
                         .setHdd(1024)
                         .setRam(32)
+                        .setUsb(2)
                         .CreateInstance(),
 
                 new Laptop.LaptopBuilder()
@@ -40,64 +50,49 @@ public class Main {
                         .setName("Omen")
                         .setHdd(512)
                         .setRam(16)
+                        .setUsb(3)
                         .CreateInstance()
         };
         DataBaseConnector connector = new DataBaseConnector();
-        connector.executeSQL("CREATE TABLE Smartphones (" +
-                "Id INT IDENTITY(1,1) PRIMARY KEY, " +
-                "Manufacturer NVARCHAR(30) NOT NULL, " +
-                "Name NVARCHAR(30) NOT NULL, " +
-                "Storage INT NOT NULL, " +
-                "Ram INT NOT NULL);");
+        connector.create();
 
-        connector.executeSQL("CREATE TABLE Laptops (" +
-                "Id INT IDENTITY(1,1) PRIMARY KEY, " +
-                "Manufacturer NVARCHAR(30) NOT NULL, " +
-                "Name NVARCHAR(30) NOT NULL, " +
-                "Storage INT NOT NULL, " +
-                "Ram INT NOT NULL, " +
-                "Usb INT NOT NULL);");
+        SmartphoneRepository phonesRep = new SmartphoneRepository(connector);
+        LaptopRepository laptopRep = new LaptopRepository(connector);
 
-        for (Smartphone phone : smartphones) {
-            String manufacturer = phone.getManufacturer();
-            String name = phone.getName();
-            int storage = (int)phone.getStorage();
-            int ram = (int)phone.getRam();
+        laptopRep.addArray(laptops);
 
-            var values = String.format("('%s', '%s', %d, %d)", manufacturer, name, storage, ram);
+        phonesRep.addArray(smartphones);
+        phonesRep.add(googlePixel6);
+        phonesRep.update(googlePixel6, new Smartphone.SmartphoneBuilder()
+                                       .setManufacturer("Google")
+                                       .setName("Pixel 6")
+                                       .setStorage(512)
+                                       .setRam(12)
+                                       .CreateInstance());
 
-            connector.executeSQL("INSERT INTO Smartphones (Manufacturer, Name, Storage, Ram) " +
-                    "VALUES " + values + ";");
+        phonesRep.delete(googlePixel6);
+
+        System.out.println("== Phones ==");
+        for (Smartphone phone: phonesRep.getPhones()) {
+            System.out.println(phone);
+        }
+        System.out.println("== Laptop ==");
+        for (Laptop laptop: laptopRep.getLaptops()) {
+            System.out.println(laptop);
         }
 
-        for (Laptop laptop : laptops) {
-            String manufacturer = laptop.getManufacturer();
-            String name = laptop.getName();
-            int storage = (int)laptop.getStorage();
-            int ram = (int)laptop.getRam();
-            int usb = (int)laptop.getRam();
+        System.out.println("= Laptops cost with discount 50% = " + laptopRep.getPriceWithDiscount(0.50f));
+        System.out.println();
 
-            var values = String.format("('%s', '%s', %d, %d, %d)", manufacturer, name, storage, ram, usb);
-
-            connector.executeSQL("INSERT INTO Laptops (Manufacturer, Name, Storage, Ram, Usb) " +
-                    "VALUES " + values + ";");
+        System.out.println("= Laptops that are cheaper than 16000");
+        for (Laptop laptop: laptopRep.getCheaperDevices(16000)) {
+            System.out.println(laptop);
         }
+        System.out.println();
 
-        try {
-            var result = connector.executeSQLWithResult("SELECT * FROM Smartphones");
-            System.out.println("Smartphones: ");
-            while (result.next()) {
-                System.out.print(result.getString("Manufacturer") + " ");
-                System.out.println(result.getString("Name"));
-            }
-            result = connector.executeSQLWithResult("SELECT * FROM Laptops");
-            System.out.println("Laptops: ");
-            while (result.next()) {
-                System.out.print(result.getString("Manufacturer") + " ");
-                System.out.println(result.getString("Name"));
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
+        System.out.println("= Laptops that are expensive than 5000");
+        for (Laptop laptop: laptopRep.getExpensiveDevices(5000)) {
+            System.out.println(laptop);
         }
     }
 }

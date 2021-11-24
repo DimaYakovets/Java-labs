@@ -15,6 +15,22 @@ public class DataBaseConnector {
             e.printStackTrace();
         }
     }
+    public void create(){
+        executeSQL("CREATE TABLE Smartphones (" +
+                "Id INT IDENTITY(1,1) PRIMARY KEY, " +
+                "Manufacturer NVARCHAR(30) NOT NULL, " +
+                "Name NVARCHAR(30) NOT NULL, " +
+                "Storage INT NOT NULL, " +
+                "Ram INT NOT NULL);");
+
+        executeSQL("CREATE TABLE Laptops (" +
+                "Id INT IDENTITY(1,1) PRIMARY KEY, " +
+                "Manufacturer NVARCHAR(30) NOT NULL, " +
+                "Name NVARCHAR(30) NOT NULL, " +
+                "Hdd INT NOT NULL, " +
+                "Ram INT NOT NULL, " +
+                "Usb INT NOT NULL);");
+    }
 
     public void executeSQL(String query) {
         try {
@@ -33,5 +49,8 @@ public class DataBaseConnector {
             e.printStackTrace();
             return  null;
         }
+    }
+    public PreparedStatement createPreparedStatement(String sql) throws SQLException {
+        return _connection.prepareStatement(sql);
     }
 }

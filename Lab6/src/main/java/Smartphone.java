@@ -4,7 +4,7 @@ public class Smartphone extends Device {
 
     private Smartphone(SmartphoneBuilder b)
     {
-        super(b._name, b._manufacturer, b._ram);
+        super(0, b._name, b._manufacturer, b._ram);
         _storage = b._storage;
     }
     @Override
