@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            span {
+                width: 100px;
+                display: inline-block;
+            }
+            input {
+                display: block;
+                margin: 3px 3px 3px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Add new phone</h1>
+        <form method="post" action="/Store/add">
+            <div>
+                <span>Manufacturer</span>
+                <input type="text" name="manufacturer">
+            </div>
+            <div>
+                <span>Name</span>
+                <input type="text" name="name">
+            </div>
+            <div>
+
+                <span>Ram</span>
+                <input type="text" name="ram">
+            </div>
+            <div>
+
+                <span>Storage</span>
+                <input type="text" name="storage">
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
